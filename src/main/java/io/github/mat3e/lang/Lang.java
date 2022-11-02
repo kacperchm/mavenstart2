@@ -1,4 +1,4 @@
-package io.github.mat3e;
+package io.github.mat3e.lang;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,7 +8,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 @Entity
 @Table(name = "languages")
-class Lang {
+public class Lang {
     @Id
     @GeneratedValue(generator = "inc")
     @GenericGenerator(name = "inc", strategy = "increment")
